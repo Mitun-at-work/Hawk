@@ -4,9 +4,11 @@ from src.check_image_simmilarities import ImageSimilarityChecker
 
 
 if __name__ == '__main__' :
+    # Data Duplicates Check
     dc = DataCheck()
     dc.run()
     
     # Run   
     similarity_checker = ImageSimilarityChecker(batch_size=25)
-    # similar_images = similarity_checker.get_similar_images()
+    # Get Simmilar Images
+    similar_images = similarity_checker.get_similar_images()
